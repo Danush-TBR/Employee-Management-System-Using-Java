@@ -67,7 +67,7 @@ public class Main {
         ProductTesting.setName("Product Testing");
 
         //Creating a list of departments
-        List<Department> departments = new ArrayList<>(Arrays.asList(Management, HR, Finance, ProductManagement));
+        List<Department> departments = new ArrayList<>(Arrays.asList(Management, HR, Finance, ProductManagement,ProductDevelopment,ProductTesting));
 
         //Adding Employee's and adding them to their respective department
         Employee Sriram = new Employee(1,"Sriram",45,"CEO",Management);
