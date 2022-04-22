@@ -20,15 +20,16 @@ public class Employee{
         department.setCount();
     }
     public Employee(int id, String name, int age, String designation, Department department, Employee reportingTo){
-        this.id = id;
-        this.age = age;
-        this.name = name;
-        this.designation = designation;
-        this.department = department;
+        this(id,name,age,designation,department);
+//        this.id = id;
+//        this.age = age;
+//        this.name = name;
+//        this.designation = designation;
+//        this.department = department;
+//        this.employeeList = new ArrayList<>();
+//        department.depEmployeeList.add(this);
+//        department.setCount();
         this.reportingTo = reportingTo;
-        this.employeeList = new ArrayList<>();
-        department.depEmployeeList.add(this);
-        department.setCount();
         reportingTo.employeeList.add(this);
     }
     @Override
