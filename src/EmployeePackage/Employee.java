@@ -16,8 +16,8 @@ public class Employee{
         this.designation = designation;
         this.department = department;
         this.employeeList = new ArrayList<>();
-        department.depEmployeeList.add(this);
-        department.setCount();
+        this.department.depEmployeeList.add(this);
+        this.department.setCount();
     }
     public Employee(int id, String name, int age, String designation, Department department, Employee reportingTo){
         this(id,name,age,designation,department);
